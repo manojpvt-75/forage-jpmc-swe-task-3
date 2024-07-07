@@ -41,8 +41,8 @@ from socketserver   import ThreadingMixIn
 
 # Sim params
 
-REALTIME    = True
-SIM_LENGTH  = timedelta(days = 365 * 5)
+REALTIME= True
+SIM_LENGTH= timedelta(days = 365 * 5)
 MARKET_OPEN = datetime.today().replace(hour = 0, minute = 30, second = 0)
 
 # Market parms
@@ -59,7 +59,7 @@ OVERLAP = 4
 #
 # Test Data
 
-def bwalk(min, max, std):
+def bwalk(min,max,std):
     """ Generates a bounded random walk. """
     rng = max - min
     while True:
